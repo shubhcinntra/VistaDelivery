@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cinntra.vistadelivery" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRECISE_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.cinntra.vistadelivery.globals.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CinntraSales"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon" >
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.RegisterNowActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register_now"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+        />
+        <activity
+            android:name="com.cinntra.vistadelivery.test.TestBlankActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.EditExpenseActivity"
+            android:exported="false"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.ListedDoctor"
+            android:exported="false"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.bpActivity.AddBranchActivity"
+            android:exported="false"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.bpActivity.UpdateBranchActivity"
+            android:exported="false"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.bpActivity.UpdateContactActivity"
+            android:exported="false"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.MyMapLocation"
+            android:exported="false"
+            android:label="@string/title_activity_my_map_location" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.DoctorScreen"
+            android:exported="false"
+            android:label="Doctor Screen"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.GetAllFileFromFolder"
+            android:exported="false"
+            android:label="@string/title_activity_my_map_location" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cinntra.vistadelivery.activities.SearchActivity" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.InvoiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/invoice"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.QuotationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/quotations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.DemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/quotations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.WebViewToPdf"
+            android:exported="false" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.OpportunitiesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_invoice"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.OrderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/sales_order"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/FullScreen" -->
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.SignUp"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="New User"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.SqlSetting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.Notifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.DeliveryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.InvoiceItemList"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.InventoryActivity"
+            android:label="@string/inventory"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.ExpenseActivity"
+            android:label="@string/expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.PaymentDetails"
+            android:label="Payment Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddExpense"
+            android:label="@string/addexpense"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddPaymentDetails"
+            android:label="@string/addpaymentdetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" /> <!--  -->
+        <activity
+            android:name="com.cinntra.vistadelivery.globals.MainBaseActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.LeadsActivity"
+            android:label="@string/leads"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.CampaignActivity"
+            android:label="@string/campaign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.CreateContact"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddQuotationAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddOrderAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.bpActivity.AddBPCustomer"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddOpportunityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddLead"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddCampaign"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenMateial"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.BussinessPartners"
+            android:label="@string/customer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.ItemsList"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.OwnerList"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.SelectedItems"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.AddContact"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen" /> <!-- Receivers -->
+        <receiver
+            android:name="com.cinntra.vistadelivery.receivers.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+        <!--
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCPyJtXV5WCzTH9P7TwCd8hl8V-UiiVhKc" />
+        -->
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.LocationListing"
+            android:label="@string/location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cinntra.vistadelivery.activities.Opportunities_Pipeline_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_invoice"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.cinntra.vistadelivery.receivers.NotificationPublisher" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cinntra.vistadelivery.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+        <!--
+       <receiver android:name=".receivers.CallRecorder$CallReceiver"
+            tools:ignore="Instantiatable" />
+        -->
+        <!--
+  <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <!--
+     <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <!--
+ <receiver
+            android:name="com.cinntra.standalone.receivers.CallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service android:name="com.cinntra.vistadelivery.services.GoogleService" />
+        <service
+            android:name="com.cinntra.vistadelivery.FirebaseMessageReceiver"
+            android:exported="false"
+            android:foregroundServiceType="location" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.cinntra.vistadelivery.workManager.WorkManagerApplication"
+            android:foregroundServiceType="location"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.cinntra.vistadelivery.workManager.BackgroundLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+    </application>
+
+</manifest>

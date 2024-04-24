@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69486092965",
+    "project_id": "vistadelivery-196b0",
+    "storage_bucket": "vistadelivery-196b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69486092965:android:494dbfe3765f71cc45234c",
+        "android_client_info": {
+          "package_name": "com.cinntra.vistadelivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSzLYgd671kNuBKjVEwYZpfZq3KnyS25Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

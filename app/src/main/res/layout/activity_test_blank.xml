@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp"
+    android:orientation="vertical"
+    tools:context=".test.TestBlankActivity">
+
+    <TextView
+        android:id="@+id/headTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:fontFamily="@font/muli_regular"
+        android:text="@string/total_amount"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/etTotalValues"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/rounded_border"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center_vertical"
+        android:hint="0"
+        android:text="100.0"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/light_grey_box"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <TextView
+        android:id="@+id/_discont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:fontFamily="@font/muli_regular"
+        android:text="@string/_discont"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/discont_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/rounded_border"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center_vertical"
+        android:hint="0"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/light_grey_box"
+        android:textSize="@dimen/text_size_14" />
+    <TextView
+        android:id="@+id/shipping_handling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:fontFamily="@font/muli_regular"
+        android:text="Freight Charges"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/edFreightCharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/rounded_border"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/ex_5000"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/light_grey_box"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <TextView
+        android:id="@+id/buyBuck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:fontFamily="@font/muli_regular"
+        android:text="Buy Back"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/edBuyBuck"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/size_10"
+        android:background="@drawable/rounded_border"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center_vertical"
+        android:hint="Ex - 200"
+        android:imeOptions="actionNext"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/light_grey_box"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>
